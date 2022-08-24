@@ -156,6 +156,7 @@ view: factura {
   measure:avg_pendiente{
     type: average
     sql: ${pendiente} ;;
+    value_format: "0"
   }
 
   measure: suma_pago {
