@@ -153,8 +153,8 @@ view: factura {
     sql: ${pagos} ;;
   }
 
-  measure:max_pendiente{
-    type: max
+  measure:avg_pendiente{
+    type: average
     sql: ${pendiente} ;;
   }
 
