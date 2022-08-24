@@ -161,6 +161,6 @@ view: factura {
   measure: suma_pago {
     type: sum
     sql: ${pago} ;;
-    value_format: "0.00"
+    value_format: "$0"
   }
 }
