@@ -141,4 +141,19 @@ view: factura {
     type: count
     drill_fields: []
   }
+
+  measure: avg_pagos {
+    type: average
+    sql: ${pagos_py} ;;
+  }
+
+  measure: max_numero_pagos {
+    type: max
+    sql: ${pagos} ;;
+  }
+
+  measure:max_pendiente{
+    type: max
+    sql: ${pendiente} ;;
+  }
 }
