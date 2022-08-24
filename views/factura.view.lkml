@@ -72,19 +72,19 @@ view: factura {
   }
 
   dimension: pago {
-    label: "Pagp"
+    label: "Pago"
     type: number
     sql: ${TABLE}.Pago ;;
   }
 
   dimension: pagos {
-    label: "Pagps"
+    label: "Pagos"
     type: number
     sql: ${TABLE}.Pagos ;;
   }
 
   dimension: pagos_cy {
-    label: "Pagps CY"
+    label: "Pagos CY"
     type: number
     sql: ${TABLE}.Pagos_CY ;;
   }
@@ -156,5 +156,11 @@ view: factura {
   measure:max_pendiente{
     type: max
     sql: ${pendiente} ;;
+  }
+
+  measure: suma_pago {
+    type: sum
+    sql: ${pago} ;;
+    value_format: "0.00"
   }
 }
