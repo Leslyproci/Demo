@@ -3,27 +3,31 @@ view: factura {
     ;;
 
   dimension: anio {
-    label: "año"
+    label: "Año"
     type: number
     sql: ${TABLE}.Anio ;;
   }
 
   dimension: aprobada {
+    label: "Aprobado"
     type: number
     sql: ${TABLE}.Aprobada ;;
   }
 
   dimension: cliente {
+    label: "Cliente"
     type: string
     sql: ${TABLE}.Cliente ;;
   }
 
   dimension: customer_id {
+    label: "ID cliente"
     type: string
     sql: ${TABLE}.Customer_Id ;;
   }
 
   dimension_group: fecha_factura {
+    label: "Fecha Factura"
     type: time
     timeframes: [
       raw,
@@ -44,76 +48,91 @@ view: factura {
   }
 
   dimension: glosa_1 {
+    label: "Glosa"
     type: number
     sql: ${TABLE}.Glosa_1 ;;
   }
 
   dimension: iva {
+    label: "Iva"
     type: number
     sql: ${TABLE}.IVA ;;
   }
 
   dimension: mes {
+    label: "Mes"
     type: number
     sql: ${TABLE}.Mes ;;
   }
 
   dimension: nro_factura {
+    label: "Nro Factura"
     type: number
     sql: ${TABLE}.Nro_FACTURA ;;
   }
 
   dimension: pago {
+    label: "Pagp"
     type: number
     sql: ${TABLE}.Pago ;;
   }
 
   dimension: pagos {
+    label: "Pagps"
     type: number
     sql: ${TABLE}.Pagos ;;
   }
 
   dimension: pagos_cy {
+    label: "Pagps CY"
     type: number
     sql: ${TABLE}.Pagos_CY ;;
   }
 
   dimension: pagos_py {
+    label: "Pagos PY"
     type: number
     sql: ${TABLE}.Pagos_PY ;;
   }
 
   dimension: pendiente {
+    label: "Pendiente"
     type: number
     sql: ${TABLE}.Pendiente ;;
   }
 
   dimension: plan {
+    label: "Plan"
     type: string
     sql: ${TABLE}.Plan ;;
   }
 
   dimension: productos {
+    label: "Productos"
     type: number
     sql: ${TABLE}.Productos ;;
   }
 
   dimension: region {
+    label: "Region"
     type: string
     sql: ${TABLE}.Region ;;
   }
 
   dimension: segmento {
+    label: "Segmento"
     type: string
     sql: ${TABLE}.Segmento ;;
   }
 
   dimension: tipo_de_evento {
+    label: "Tipo de evento"
     type: string
     sql: ${TABLE}.Tipo_de_Evento ;;
   }
 
   dimension: total {
+    label: "Total"
     type: number
     sql: ${TABLE}.Total ;;
   }
