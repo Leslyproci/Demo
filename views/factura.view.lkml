@@ -145,6 +145,7 @@ view: factura {
   measure: avg_pagos {
     type: average
     sql: ${pagos_py} ;;
+    value_format: "0.00"
   }
 
   measure: max_numero_pagos {
